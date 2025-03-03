@@ -14,7 +14,7 @@ packages = [{include = "langgraph_storage"}]
 python = ">=3.11,<4.0"
 langchain-core = "^0.3.0"
 langgraph-sdk = "^0.1.2"
-starlette = ">=0.38.6"
+starlette = "<0.39.0,>=0.37.2"
 psycopg = "^3.1.0"
 psycopg-pool = "^3.1.0"
 asyncio = "^3.4.3"
