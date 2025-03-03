@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "langgraph_storage"
+version = "0.1.0"
+description = "A storage library for LangGraph applications"
+authors = ["Your Name <your.email@example.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/yourusername/langgraph_storage"
+homepage = "https://github.com/yourusername/langgraph_storage"
+keywords = ["langgraph", "storage", "database"]
+packages = [{include = "langgraph_storage"}]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<4.0"
+langchain-core = "^0.3.0"
+langgraph-sdk = "^0.1.2"
+starlette = ">=0.38.6"
+psycopg = "^3.1.0"
+psycopg-pool = "^3.1.0"
+asyncio = "^3.4.3"
+langgraph = "^0.2.0"
+croniter = "^1.4.1"
+uuid = "^1.30"
+coredis = "^4.13.2"
+orjson = "^3.9.10"
+langgraph-api="*"
+structlog = ">=24.4.0,<25.0.0"
+
+# Standard Python modules (These don't need to be listed as dependencies)
+# - ast, re, datetime, contextlib, typing, threading, functools, builtins, os, collections, logging, json, concurrent, hashlib, types
+python-dotenv = "^1.0.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+black = "*"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+pytest-asyncio = "^0.25.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

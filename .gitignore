@@ -1,0 +1,66 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.so
+*.pyo
+*.pyd
+
+# Virtual environments (Poetry, venv, Pipenv)
+.venv/
+env/
+venv/
+pip-wheel-metadata/
+poetry.lock
+
+# Editor & IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+
+# System files (macOS, Linux, Windows)
+.DS_Store
+Thumbs.db
+*.log
+*.out
+
+# Environment files (security-sensitive)
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# pytest cache & test artifacts
+.pytest_cache/
+coverage.xml
+htmlcov/
+nosetests.xml
+coverage/
+*.cover
+*.pyc
+cache/
+.vimrc
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+*.manifest
+*.spec
+
+# LangGraph & LangGraph API-related files
+.langgraph_api/
+.langgraph_checkpoint.*
+.langgraph_ops.pckl
+.langgraph_retry_counter.pckl
+store.pckl
+store.vectors.pckl
+
+# Poetry artifacts
+poetry.lock
+pip-wheel-metadata/
